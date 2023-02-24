@@ -1,0 +1,46 @@
+
+.App-header {
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.images{
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+}
+.images div{
+  border-radius:7px;
+  border: 0.5px solid rgb(199, 190, 139);
+}
+body{
+  margin-left: 4em;
+   overflow-x: hidden; 
+}
+
+.showed{
+  margin-right: 3em;
+  float: right;
+}
+a{
+  margin-top: 2em;
+  float: right;
+  margin-right: 3em;
+}
+ 
+h1{
+  color:black;
+}
+
+span{
+  color: rgb(160, 160, 234);
+}
+select{
+  color: rgb(143, 143, 235);
+}
