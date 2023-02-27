@@ -1,4 +1,9 @@
 import { useRef, useEffect } from "react";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+
 import SubmitButton from "../../components/SubmitButton/SubmitButton";
 import Field from "../../components/Field/Field";
 import Select from "../../components/Select/Select";
@@ -18,7 +23,30 @@ export default function RegisterPage() {
     const progress: any = document.getElementById("progress");
     const formSteps = document.querySelectorAll(".form-step");
     const progressSteps = document.querySelectorAll(".progress-step");
-    console.log(formSteps);
+
+    const passwordHide = document.querySelector(".password-hide-icon");
+    const passwordShow = document.querySelector(".password-show-icon");
+    const passwordField = document.querySelector("#orgPasswd");
+
+    //Show and Hide password
+
+    passwordShow?.addEventListener("click", () => {
+      passwordShow?.classList.add("password-hide-icon");
+      passwordShow?.classList.remove("active");
+      passwordField?.removeAttribute("type");
+      passwordField?.setAttribute("type", "text");
+      passwordHide?.classList.remove("password-hide-icon");
+      passwordHide?.classList.add("active");
+    });
+
+    passwordHide?.addEventListener("click", () => {
+      passwordHide?.classList.add("password-hide-icon");
+      passwordHide?.classList.remove("active");
+      passwordField?.removeAttribute("type");
+      passwordField?.setAttribute("type", "password");
+      passwordShow?.classList.remove("password-hide-icon");
+      passwordShow?.classList.add("active");
+    });
 
     //Track movement on the progress bar
     let formStepsNum = 0;
@@ -147,6 +175,14 @@ export default function RegisterPage() {
             name={passwdName}
             id={passwdId}
           />
+          <div className="password-hide">
+            <FontAwesomeIcon
+              className="password-show-icon active"
+              icon={faEye}
+            />
+            <FontAwesomeIcon className="password-hide-icon" icon={faEyeSlash} />
+          </div>
+
           <div className="">
             <SubmitButton buttonValue={submitButtonValue} />
           </div>
