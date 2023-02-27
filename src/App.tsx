@@ -1,12 +1,14 @@
 import RegisterPage from "./pages/Register/RegisterPage";
 import Sample from "./pages/Sample";
 import "./App.css";
+import Login from "./pages/Login/Login";
 
 function App() {
   return (
     <div className="App">
-      <RegisterPage />
+      {/* <RegisterPage /> */}
       {/* <Sample/> */}
+      <Login />
     </div>
   );
 }

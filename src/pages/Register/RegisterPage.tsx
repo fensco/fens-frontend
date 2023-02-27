@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react";
-import Button from "../../components/SubmitButton/SubmitButton";
+import SubmitButton from "../../components/SubmitButton/SubmitButton";
 import Field from "../../components/Field/Field";
 import Select from "../../components/Select/Select";
 
@@ -148,7 +148,7 @@ export default function RegisterPage() {
             id={passwdId}
           />
           <div className="">
-            <Button buttonValue={submitButtonValue} />
+            <SubmitButton buttonValue={submitButtonValue} />
           </div>
         </div>
       </form>
