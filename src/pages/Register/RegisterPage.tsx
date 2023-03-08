@@ -8,9 +8,6 @@ import SubmitButton from "../../components/SubmitButton/SubmitButton";
 import Field from "../../components/Field/Field";
 
 import Logo from "./../../assets/snof-logo.png";
-import Ellipse1 from "./../../assets/first-ellipse.svg";
-import Ellipse2 from "./../../assets/second-ellipse.svg";
-
 import "./RegisterPage.css";
 
 export default function RegisterPage() {
