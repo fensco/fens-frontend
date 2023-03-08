@@ -171,11 +171,7 @@ h2 {
   width: 2.5rem;
   height: 1.6875rem;
   position: absolute;
-<<<<<<< HEAD
-  bottom: 26.5%;
-=======
   bottom: 23%;
->>>>>>> b2ceab1 (password icons working)
   left: 60%;
   cursor: pointer;
 }
@@ -183,7 +179,3 @@ h2 {
 .password-hide-icon {
   display: none;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> b2ceab1 (password icons working)
